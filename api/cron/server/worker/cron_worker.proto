@@ -1,0 +1,102 @@
+syntax = "proto3";
+
+package cron.api.server.cron.worker.v1;
+
+option go_package = "./v1;v1";
+option java_multiple_files = true;
+option java_package = "cron.api.server.cron.worker.v1";
+option java_outer_classname = "WorkerV1";
+
+import "validate/validate.proto";
+
+message GetWorkerRequest {
+  optional uint32 id = 1[(validate.rules).uint32 = {gt: 0}];
+  optional string ip = 2[(validate.rules).string = {min_len: 1}];
+}
+
+message GetWorkerReply {
+  uint32 id = 1;
+  string name = 2;
+  string ip = 3;
+  string ak = 4;
+  string sk = 5;
+  optional uint32 groupId = 6;
+  optional bool status = 7;
+  optional string description = 8;
+  uint32 createdAt = 9;
+  uint32 updatedAt = 10;
+}
+
+message ListWorkerRequest {
+  uint32 page = 1[(validate.rules).uint32 = {gt: 0}];
+  uint32 pageSize = 2[(validate.rules).uint32 = {gt: 0,lte:50}];
+  optional string name = 5;
+  optional string ip = 6;
+  optional uint32 groupId = 7;
+  optional bool status = 8;
+}
+
+message ListWorkerReply {
+  message Group{
+    string name = 1;
+  }
+  message Worker {
+    uint32 id = 1;
+    string name = 2;
+    string ip = 3;
+    string ak = 4;
+    string sk = 5;
+    optional uint32 groupId = 6;
+    optional bool status = 7;
+    optional string description = 8;
+    uint32 createdAt = 9;
+    uint32 updatedAt = 10;
+    optional Group group = 11;
+  }
+
+  uint32 total = 1;
+  repeated Worker list = 2;
+}
+
+message CreateWorkerRequest {
+  string name = 1[(validate.rules).string = {min_len: 1}];
+  string ip = 2[(validate.rules).string = {min_len: 1}];
+  string ak = 3[(validate.rules).string = {min_len: 1}];
+  string sk = 4[(validate.rules).string = {min_len: 1}];
+  optional uint32 groupId = 5[(validate.rules).uint32 = {gt: 0}];
+  optional bool status = 6;
+  optional string description = 7;
+}
+
+message CreateWorkerReply {
+  uint32 id = 1;
+}
+
+message UpdateWorkerRequest {
+  uint32 id = 1[(validate.rules).uint32 = {gt: 0}];
+  string name = 2[(validate.rules).string = {min_len: 1}];
+  string ip = 3[(validate.rules).string = {min_len: 1}];
+  string ak = 4[(validate.rules).string = {min_len: 1}];
+  string sk = 5[(validate.rules).string = {min_len: 1}];
+  optional uint32 groupId = 6[(validate.rules).uint32 = {gt: 0}];
+  optional string description = 7;
+}
+
+message UpdateWorkerReply {
+}
+
+message UpdateWorkerStatusRequest {
+  uint32 id = 1[(validate.rules).uint32 = {gt: 0}];
+  bool status = 2;
+}
+
+message UpdateWorkerStatusReply {
+}
+
+message DeleteWorkerRequest {
+  uint32 id = 1[(validate.rules).uint32 = {gte:0}];
+}
+
+message DeleteWorkerReply {
+}
+
