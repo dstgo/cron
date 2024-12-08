@@ -14,8 +14,8 @@ import (
 	"github.com/go-kratos/kratos/v2/transport/grpc"
 	"google.golang.org/protobuf/types/known/emptypb"
 
-	pb "github.com/limes-cloud/cron/api/cron/client/v1"
-	"github.com/limes-cloud/cron/internal/server/types"
+	pb "github.com/dstgo/cron/api/cron/client/v1"
+	"github.com/dstgo/cron/internal/server/types"
 )
 
 const (

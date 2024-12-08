@@ -1,16 +1,16 @@
-module github.com/limes-cloud/cron
+module github.com/dstgo/cron
 
-go 1.21.1
+go 1.23.1
 
 require (
-	github.com/dstgo/kratosx v1.0.0
+	github.com/dstgo/configure v1.0.1
+	github.com/dstgo/kratosx v1.0.1
 	github.com/envoyproxy/protoc-gen-validate v1.0.4
 	github.com/go-kratos/kratos/v2 v2.7.3
 	github.com/go-redis/redis/v8 v8.11.5
 	github.com/golang/protobuf v1.5.4
 	github.com/google/uuid v1.6.0
 	github.com/json-iterator/go v1.1.12
-	github.com/limes-cloud/configure v1.0.49
 	go.uber.org/automaxprocs v1.5.3
 	google.golang.org/genproto/googleapis/api v0.0.0-20240624140628-dc46fd24d27d
 	google.golang.org/grpc v1.64.0

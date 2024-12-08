@@ -11,9 +11,9 @@ import (
 
 	"github.com/dstgo/kratosx"
 
-	"github.com/limes-cloud/cron/internal/server/domain/entity"
-	"github.com/limes-cloud/cron/internal/server/pkg/cron"
-	"github.com/limes-cloud/cron/internal/server/types"
+	"github.com/dstgo/cron/internal/server/domain/entity"
+	"github.com/dstgo/cron/internal/server/pkg/cron"
+	"github.com/dstgo/cron/internal/server/types"
 )
 
 const (

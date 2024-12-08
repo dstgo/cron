@@ -9,14 +9,14 @@ import (
 	"github.com/go-kratos/kratos/v2/transport/grpc"
 	"github.com/go-kratos/kratos/v2/transport/http"
 
-	"github.com/limes-cloud/cron/api/cron/errors"
-	pb "github.com/limes-cloud/cron/api/cron/server/task/v1"
-	"github.com/limes-cloud/cron/internal/server/conf"
-	"github.com/limes-cloud/cron/internal/server/domain/entity"
-	"github.com/limes-cloud/cron/internal/server/domain/service"
-	"github.com/limes-cloud/cron/internal/server/infra/dbs"
-	"github.com/limes-cloud/cron/internal/server/infra/rpc"
-	"github.com/limes-cloud/cron/internal/server/types"
+	"github.com/dstgo/cron/api/cron/errors"
+	pb "github.com/dstgo/cron/api/cron/server/task/v1"
+	"github.com/dstgo/cron/internal/server/conf"
+	"github.com/dstgo/cron/internal/server/domain/entity"
+	"github.com/dstgo/cron/internal/server/domain/service"
+	"github.com/dstgo/cron/internal/server/infra/dbs"
+	"github.com/dstgo/cron/internal/server/infra/rpc"
+	"github.com/dstgo/cron/internal/server/types"
 )
 
 type Task struct {

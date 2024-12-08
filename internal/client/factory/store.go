@@ -7,7 +7,7 @@ import (
 
 	json "github.com/json-iterator/go"
 
-	"github.com/limes-cloud/cron/internal/client/service"
+	"github.com/dstgo/cron/internal/client/service"
 )
 
 type store struct {

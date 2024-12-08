@@ -10,8 +10,8 @@ import (
 
 	"github.com/dstgo/kratosx"
 
-	"github.com/limes-cloud/cron/internal/client/conf"
-	"github.com/limes-cloud/cron/internal/client/service"
+	"github.com/dstgo/cron/internal/client/conf"
+	"github.com/dstgo/cron/internal/client/service"
 )
 
 type watcher struct {

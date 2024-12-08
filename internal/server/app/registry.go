@@ -4,7 +4,7 @@ import (
 	"github.com/go-kratos/kratos/v2/transport/grpc"
 	"github.com/go-kratos/kratos/v2/transport/http"
 
-	"github.com/limes-cloud/cron/internal/server/conf"
+	"github.com/dstgo/cron/internal/server/conf"
 )
 
 type registryFunc func(c *conf.Config, hs *http.Server, gs *grpc.Server)

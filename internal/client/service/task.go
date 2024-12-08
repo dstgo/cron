@@ -3,8 +3,8 @@ package service
 import (
 	"github.com/dstgo/kratosx"
 
-	"github.com/limes-cloud/cron/api/cron/errors"
-	"github.com/limes-cloud/cron/internal/client/conf"
+	"github.com/dstgo/cron/api/cron/errors"
+	"github.com/dstgo/cron/internal/client/conf"
 )
 
 type TaskFactory interface {

@@ -13,8 +13,8 @@ import (
 	"github.com/go-kratos/kratos/v2/transport/http"
 	_ "go.uber.org/automaxprocs"
 
-	"github.com/limes-cloud/cron/internal/client/app"
-	"github.com/limes-cloud/cron/internal/client/conf"
+	"github.com/dstgo/cron/internal/client/app"
+	"github.com/dstgo/cron/internal/client/conf"
 )
 
 func main() {

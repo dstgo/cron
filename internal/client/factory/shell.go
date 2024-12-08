@@ -8,7 +8,7 @@ import (
 
 	"github.com/dstgo/kratosx"
 
-	"github.com/limes-cloud/cron/internal/client/service"
+	"github.com/dstgo/cron/internal/client/service"
 )
 
 func (f *Factory) shell(ctx kratosx.Context, task *service.ExecTaskRequest) (int, error) {

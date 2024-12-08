@@ -3,8 +3,8 @@ package repository
 import (
 	"github.com/dstgo/kratosx"
 
-	"github.com/limes-cloud/cron/internal/server/domain/entity"
-	"github.com/limes-cloud/cron/internal/server/types"
+	"github.com/dstgo/cron/internal/server/domain/entity"
+	"github.com/dstgo/cron/internal/server/types"
 )
 
 type Log interface {

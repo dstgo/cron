@@ -3,11 +3,11 @@ package service
 import (
 	"github.com/dstgo/kratosx"
 
-	"github.com/limes-cloud/cron/api/cron/errors"
-	"github.com/limes-cloud/cron/internal/server/conf"
-	"github.com/limes-cloud/cron/internal/server/domain/entity"
-	"github.com/limes-cloud/cron/internal/server/domain/repository"
-	"github.com/limes-cloud/cron/internal/server/types"
+	"github.com/dstgo/cron/api/cron/errors"
+	"github.com/dstgo/cron/internal/server/conf"
+	"github.com/dstgo/cron/internal/server/domain/entity"
+	"github.com/dstgo/cron/internal/server/domain/repository"
+	"github.com/dstgo/cron/internal/server/types"
 )
 
 type Log struct {

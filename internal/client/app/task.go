@@ -8,10 +8,10 @@ import (
 	"github.com/go-kratos/kratos/v2/transport/http"
 	"google.golang.org/protobuf/types/known/emptypb"
 
-	pb "github.com/limes-cloud/cron/api/cron/client/v1"
-	"github.com/limes-cloud/cron/internal/client/conf"
-	"github.com/limes-cloud/cron/internal/client/factory"
-	"github.com/limes-cloud/cron/internal/client/service"
+	pb "github.com/dstgo/cron/api/cron/client/v1"
+	"github.com/dstgo/cron/internal/client/conf"
+	"github.com/dstgo/cron/internal/client/factory"
+	"github.com/dstgo/cron/internal/client/service"
 )
 
 type Task struct {

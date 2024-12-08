@@ -9,7 +9,7 @@ import (
 	"github.com/dstgo/kratosx/library/http"
 	json "github.com/json-iterator/go"
 
-	"github.com/limes-cloud/cron/internal/client/service"
+	"github.com/dstgo/cron/internal/client/service"
 )
 
 type HttpRequest struct {
